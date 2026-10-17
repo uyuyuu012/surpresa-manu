@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#F6F5EF">
+    <meta name="description" content="Um pequeno lugar para guardar nossas lembranças favoritas.">
+
+    <title>Nossa história 💚</title>
+
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="topo">
+        <a class="marca" href="#inicio" aria-label="Voltar ao início">
+            nós<span>dois</span>
+        </a>
+
+        <a class="link-topo" href="#memorias">Nossas memórias</a>
+    </header>
+
+    <main>
+        <!-- CAPA -->
+        <section class="capa secao" id="inicio">
+            <p class="sobretitulo">Um lugar para a Princesa e o Shoyo</p>
+
+            <h1>
+                Nossa<br>
+                <span>história.</span>
+            </h1>
+
+            <p class="introducao">
+                Algumas das minhas lembranças favoritas são com você.
+            </p>
+
+            <figure class="foto-capa">
+                <img
+                    src="img/festa-junina.jpeg"
+                    alt="Uma lembrança especial de nós dois"
+                    fetchpriority="high"
+                >
+            </figure>
+
+            <a class="botao" href="#memorias">
+                Relembrar nossos momentos
+                <span aria-hidden="true">↓</span>
+            </a>
+
+            <p class="dica-rolagem">feito com carinho, por Shoyo</p>
+        </section>
+
+        <!-- MEMÓRIAS -->
+        <section class="secao memorias" id="memorias">
+            <div class="cabecalho-secao">
+                <p class="sobretitulo">guardados com carinho</p>
+
+                <h2>
+                    Pequenos momentos,<br>
+                    <span>grandes lembranças.</span>
+                </h2>
+
+                <p class="texto-secao">
+                    Cada foto guarda um pedacinho da nossa história.
+                </p>
+            </div>
+
+            <div class="lista-memorias">
+
+                <article class="memoria">
+                    <img
+                        src="imagens/memoria1.jpg"
+                        alt="Foto de uma lembrança especial"
+                        loading="lazy"
+                        class="imagem-memoria"
+                        tabindex="0"
+                    >
+
+                    <div class="detalhe-memoria">
+                        <p class="numero">01 <span>— uma lembrança</span></p>
+                        <h3>Um dia especial</h3>
+
+                        <p>
+                            Escreva aqui o que aconteceu nesse dia
+                            e por que ele é importante para você.
+                        </p>
+
+                        <time datetime="">Coloque uma data, se quiser</time>
+                    </div>
+                </article>
+
+                <article class="memoria memoria-invertida">
+                    <img
+                        src="imagens/memoria2.jpg"
+                        alt="Foto de outro momento de vocês"
+                        loading="lazy"
+                        class="imagem-memoria"
+                        tabindex="0"
+                    >
+
+                    <div class="detalhe-memoria">
+                        <p class="numero">02 <span>— um sorriso guardado</span></p>
+                        <h3>Um momento feliz</h3>
+
+                        <p>
+                            Pode ser uma viagem, um passeio simples
+                            ou até uma piada que só vocês entendem.
+                        </p>
+
+                        <time datetime="">Coloque uma data, se quiser</time>
+                    </div>
+                </article>
+
+                <article class="memoria">
+                    <img
+                        src="imagens/memoria3.jpg"
+                        alt="Foto de mais uma memória de vocês"
+                        loading="lazy"
+                        class="imagem-memoria"
+                        tabindex="0"
+                    >
+
+                    <div class="detalhe-memoria">
+                        <p class="numero">03 <span>— e muitos outros</span></p>
+                        <h3>Uma lembrança favorita</h3>
+
+                        <p>
+                            Conte aqui um detalhe que você nunca
+                            quer esquecer desse momento.
+                        </p>
+
+                        <time datetime="">Coloque uma data, se quiser</time>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CARTA -->
+        <section class="secao carta-secao" id="carta">
+            <p class="sobretitulo">um recadinho para você</p>
+
+            <h2>
+                Tem uma coisa<br>
+                <span>que quero te dizer.</span>
+            </h2>
+
+            <p class="texto-secao">
+                Preparei algumas palavras especialmente para você.
+            </p>
+
+            <button
+                class="botao botao-carta"
+                id="abrir-carta"
+                type="button"
+                aria-expanded="false"
+                aria-controls="conteudo-carta"
+            >
+                Abrir minha carta
+                <span aria-hidden="true">♡</span>
+            </button>
+
+            <div class="conteudo-carta" id="conteudo-carta" hidden>
+                <div class="papel-carta">
+                    <p class="saudacao">Meu amor,</p>
+
+                    <p>
+                        Coloque aqui sua carta. Escreva do seu jeito,
+                        lembrando dos momentos que fizeram vocês felizes
+                        e do que ela significa para você.
+                    </p>
+
+                    <p>
+                        Você pode falar sobre uma lembrança especial,
+                        agradecer por algo ou simplesmente contar
+                        por que é feliz por ter ela na sua vida.
+                    </p>
+
+                    <p class="assinatura">
+                        Com carinho,<br>
+                        <span>alguém que ama compartilhar a vida com você. 💚</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL -->
+        <section class="final secao">
+            <span class="coracao" aria-hidden="true">♡</span>
+
+            <h2>Isso é só o começo.</h2>
+
+            <p>
+                Que a gente ainda tenha muitas histórias bonitas
+                para guardar.
+            </p>
+
+            <a href="#inicio" class="link-voltar">Voltar ao início ↑</a>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Feito especialmente para você. 💚</p>
+    </footer>
+
+    <!-- VISUALIZAÇÃO AMPLIADA DAS FOTOS -->
+    <dialog class="visualizador" id="visualizador">
+        <button
+            class="fechar-visualizador"
+            type="button"
+            aria-label="Fechar imagem"
+        >×</button>
+
+        <img src="" alt="" id="imagem-ampliada">
+    </dialog>
+
+</body>
+</html>
