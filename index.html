@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="estilo.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
 
     <header class="topo">
@@ -32,15 +34,11 @@
             </h1>
 
             <p class="introducao">
-                Algumas das minhas lembranças favoritas são com você.
+                As minhas lembraças favoritas são com você!
             </p>
 
             <figure class="foto-capa">
-                <img
-                    src="img/festa-junina.jpeg"
-                    alt="Uma lembrança especial de nós dois"
-                    fetchpriority="high"
-                >
+                <img src="img/festa-junina.jpeg" alt="Uma lembrança especial de nós dois" fetchpriority="high">
             </figure>
 
             <a class="botao" href="#memorias">
@@ -69,72 +67,107 @@
             <div class="lista-memorias">
 
                 <article class="memoria">
-                    <img
-                        src="imagens/memoria1.jpg"
-                        alt="Foto de uma lembrança especial"
-                        loading="lazy"
-                        class="imagem-memoria"
-                        tabindex="0"
-                    >
+                    <img src="img/festa-pizza.jpeg" alt="Foto de uma lembrança especial" loading="lazy"
+                        class="imagem-memoria" tabindex="0">
 
                     <div class="detalhe-memoria">
-                        <p class="numero">01 <span>— uma lembrança</span></p>
-                        <h3>Um dia especial</h3>
+                        <p class="numero">01 <span>— Festa da Pizza!</span></p>
+                        <h3>Primeiro "encontro" que a gente teve KKK</h3>
 
                         <p>
-                            Escreva aqui o que aconteceu nesse dia
-                            e por que ele é importante para você.
+                            Foi um dia muito engraçado e divertido, a gente foi meio escondido para poder ficar junto e
+                            se ver
                         </p>
 
-                        <time datetime="">Coloque uma data, se quiser</time>
+                        <time datetime="">24 de abril de 2026</time>
                     </div>
                 </article>
 
                 <article class="memoria memoria-invertida">
-                    <img
-                        src="imagens/memoria2.jpg"
-                        alt="Foto de outro momento de vocês"
-                        loading="lazy"
-                        class="imagem-memoria"
-                        tabindex="0"
-                    >
+                    <img src="img/flores.jpeg" alt="Foto de outro momento de vocês" loading="lazy"
+                        class="imagem-memoria" tabindex="0">
 
                     <div class="detalhe-memoria">
-                        <p class="numero">02 <span>— um sorriso guardado</span></p>
-                        <h3>Um momento feliz</h3>
+                        <p class="numero">02 <span>— As primeiras flores que eu te dei</span></p>
+                        <h3>O primeiro encontro oficial</h3>
 
                         <p>
-                            Pode ser uma viagem, um passeio simples
-                            ou até uma piada que só vocês entendem.
+                            Foi um momento muito divertido, e ainda bem que eu comprei as flores hihihi
                         </p>
 
-                        <time datetime="">Coloque uma data, se quiser</time>
+                        <time datetime="">4 de junho de 2026</time>
                     </div>
                 </article>
 
                 <article class="memoria">
-                    <img
-                        src="imagens/memoria3.jpg"
-                        alt="Foto de mais uma memória de vocês"
-                        loading="lazy"
-                        class="imagem-memoria"
-                        tabindex="0"
-                    >
+                    <img src="img/us1.jpeg" alt="Foto de mais uma memória de vocês" loading="lazy"
+                        class="imagem-memoria" tabindex="0">
 
                     <div class="detalhe-memoria">
-                        <p class="numero">03 <span>— e muitos outros</span></p>
-                        <h3>Uma lembrança favorita</h3>
+                        <p class="numero">03 <span>— FESTA JUNINAAAA UHUUUUUL</span></p>
+                        <h3>O dia que eu mais passei em alerta na minha vida pra não tromba com seu pai</h3>
 
                         <p>
-                            Conte aqui um detalhe que você nunca
-                            quer esquecer desse momento.
+                            A gente ficou passeando, conheci muitas amigas suas, jogamos até volei (mesmo eu sem joelho)
                         </p>
 
-                        <time datetime="">Coloque uma data, se quiser</time>
+                        <time datetime="">30 de Maio de 2026</time>
                     </div>
                 </article>
 
             </div>
+        </section>
+        <!-- CARROSSEL DE FOTOS -->
+        <section class="secao galeria" id="galeria">
+            <div class="cabecalho-secao">
+                <p class="sobretitulo">mais alguns pedacinhos</p>
+                <h2>Momentos que <span>ficam.</span></h2>
+                <p class="texto-secao">
+                    Mais algumas fotos que eu quero guardar com você.
+                </p>
+            </div>
+
+            <div class="carrossel" id="carrossel">
+                <div class="carrossel-trilho" id="carrossel-trilho">
+
+                    <figure class="slide">
+                        <img src="img/us2.jpeg" alt="Nossa lembrança 1" loading="lazy">
+                        <figcaption>Um dia maravilhoso na sua casa</figcaption>
+                    </figure>
+
+                    <figure class="slide">
+                        <img src="img/us3.jpeg" alt="Nossa lembrança 2" loading="lazy">
+                        <figcaption>Um dia no shopping com a sofia e seu irmão</figcaption>
+                    </figure>
+
+                    <figure class="slide">
+                        <img src="img/us4.jpeg" alt="Nossa lembrança 3" loading="lazy">
+                        <figcaption>Uma das minhas fotos favoritas</figcaption>
+                    </figure>
+
+                    <figure class="slide">
+                        <img src="img/shoyo.jpeg" alt="Nossa lembrança 4" loading="lazy">
+                        <figcaption>Foi feito por mim</figcaption>
+                    </figure>
+
+                </div>
+            </div>
+
+            <div class="controles-carrossel">
+                <button type="button" id="slide-anterior" aria-label="Foto anterior">
+                    ←
+                </button>
+
+                <div class="indicadores" id="indicadores" aria-label="Escolher foto"></div>
+
+                <button type="button" id="slide-proximo" aria-label="Próxima foto">
+                    →
+                </button>
+            </div>
+
+            <p class="legenda-carrossel" id="posicao-slide" aria-live="polite">
+                1 de 4
+            </p>
         </section>
 
         <!-- CARTA -->
@@ -147,39 +180,55 @@
             </h2>
 
             <p class="texto-secao">
-                Preparei algumas palavras especialmente para você.
+                Preparei um textinho só para complementar
             </p>
 
-            <button
-                class="botao botao-carta"
-                id="abrir-carta"
-                type="button"
-                aria-expanded="false"
-                aria-controls="conteudo-carta"
-            >
+            <button class="botao botao-carta" id="abrir-carta" type="button" aria-expanded="false"
+                aria-controls="conteudo-carta">
                 Abrir minha carta
                 <span aria-hidden="true">♡</span>
             </button>
 
             <div class="conteudo-carta" id="conteudo-carta" hidden>
                 <div class="papel-carta">
-                    <p class="saudacao">Meu amor,</p>
+                    <p class="saudacao">Oi, meu amor!!! 💚</p>
 
                     <p>
-                        Coloque aqui sua carta. Escreva do seu jeito,
-                        lembrando dos momentos que fizeram vocês felizes
-                        e do que ela significa para você.
+                        Aqui é o seu namorado! Bom, espero de coração que você tenha gostado do site.
+                        Eu queria colocar muito mais coisas, mas queria te entregar essa surpresa
+                        antes do aniversário da Isabel e acabei não tendo tanto tempo quanto gostaria.
                     </p>
 
                     <p>
-                        Você pode falar sobre uma lembrança especial,
-                        agradecer por algo ou simplesmente contar
-                        por que é feliz por ter ela na sua vida.
+                        Mas, enfim, quero te dizer uma coisa: minha vida mudou completamente desde
+                        o aniversário da minha irmã. Desde então, sempre encontrei coisas divertidas
+                        para compartilhar com você, momentos para rir e lembranças que quero guardar
+                        para sempre.
+                    </p>
+
+                    <p>
+                        Claro que eu não sou perfeito (você é meu amor, então já sabe disso KKKKK),
+                        e nós tivemos nossos altos e baixos. Mas acredito que tudo o que passamos
+                        serviu como aprendizado. Quero continuar aprendendo cada vez mais com você,
+                        crescendo ao seu lado e construindo muitas outras lembranças juntos, meu amor.
+                    </p>
+
+                    <p>
+                        E essa foi uma surpresa que eu quis preparar para você, colocando um
+                        pouquinho de criatividade, carinho e até um toque de garota de programa
+                        dentro de mim KKKKKKKKK. Afinal, a princesa merece, né?
+                    </p>
+
+                    <p>
+                        Eu te amo muito, meu amor! Obrigado por fazer parte da minha vida e por
+                        tornar tantos momentos especiais. Espero que esse pequeno presente consiga
+                        demonstrar um pouquinho de tudo o que sinto por você. 💚
                     </p>
 
                     <p class="assinatura">
-                        Com carinho,<br>
-                        <span>alguém que ama compartilhar a vida com você. 💚</span>
+                        Com muito amor e prazer em servir a princesa,
+                        <br>
+                        <span>Shoyo. 💚</span>
                     </p>
                 </div>
             </div>
@@ -206,14 +255,11 @@
 
     <!-- VISUALIZAÇÃO AMPLIADA DAS FOTOS -->
     <dialog class="visualizador" id="visualizador">
-        <button
-            class="fechar-visualizador"
-            type="button"
-            aria-label="Fechar imagem"
-        >×</button>
+        <button class="fechar-visualizador" type="button" aria-label="Fechar imagem">×</button>
 
         <img src="" alt="" id="imagem-ampliada">
     </dialog>
 
 </body>
+
 </html>

@@ -558,3 +558,126 @@ a:focus-visible,
         transition-duration: 0.01ms !important;
     }
 }
+
+/* CARROSSEL */
+
+.galeria {
+    padding-top: 65px;
+    padding-bottom: 70px;
+    border-top: 1px solid var(--borda);
+}
+
+.carrossel {
+    width: 100%;
+    max-width: 520px;
+    margin: 32px auto 0;
+    overflow: hidden;
+    border-radius: var(--raio);
+    background: #E3E8DF;
+    touch-action: pan-y;
+}
+
+.carrossel-trilho {
+    display: flex;
+    transition: transform 350ms ease;
+    will-change: transform;
+}
+
+.slide {
+    flex: 0 0 100%;
+    min-width: 0;
+    margin: 0;
+    background: var(--fundo);
+}
+
+.slide img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    background: #E3E8DF;
+    cursor: zoom-in;
+}
+
+.slide figcaption {
+    padding: 14px 12px;
+    color: var(--verde);
+    background: var(--fundo);
+    font-size: 14px;
+    text-align: center;
+}
+
+.controles-carrossel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    margin-top: 20px;
+}
+
+.controles-carrossel button {
+    display: grid;
+    width: 44px;
+    height: 44px;
+    place-items: center;
+    border: 1px solid var(--borda);
+    border-radius: 50%;
+    background: transparent;
+    color: var(--verde);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.controles-carrossel button:disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+
+.indicadores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.indicador {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: var(--verde-claro);
+    cursor: pointer;
+}
+
+.indicador.ativo {
+    width: 22px;
+    border-radius: 10px;
+    background: var(--verde);
+}
+
+.indicador:focus-visible,
+.controles-carrossel button:focus-visible {
+    outline: 2px solid var(--verde-medio);
+    outline-offset: 4px;
+}
+
+.legenda-carrossel {
+    margin: 12px 0 0;
+    color: var(--texto-suave);
+    font-size: 12px;
+    text-align: center;
+}
+
+@media (min-width: 700px) {
+    .galeria {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .carrossel-trilho {
+        transition: none;
+    }
+}
